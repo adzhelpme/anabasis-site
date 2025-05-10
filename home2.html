@@ -1,154 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anabasis Enterprises - AI-Driven Marketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anabasis Enterprises - AI-Powered Digital Growth</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://i.imgur.com/VQMXNaF.png" type="image/png">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
-    .glow {
-      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,255,0.1));
-      animation: glowMove 4s ease-in-out infinite;
-      background-size: 200% 200%;
-    }
-    @keyframes glowMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
+    .pattern {
+      background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px), linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+      background-size: 40px 40px;
     }
   </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-black border-b border-gray-800 px-6 py-4 flex justify-between items-center">
-    <a class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent transition-all duration-300" href="/">Anabasis Enterprises</a>
-    <div class="flex items-center space-x-6">
-      <div class="relative dropdown">
-        <button class="hover:text-blue-400">Services</button>
-        <div class="absolute dropdown-menu hidden bg-gray-900 text-sm p-4 rounded shadow mt-2 space-y-2">
-          <a href="#ads" class="block hover:text-blue-500">Paid Ads</a>
-          <a href="#ai" class="block hover:text-blue-500">AI Integration</a>
-          <a href="#organic" class="block hover:text-blue-500">Organic Social</a>
-          <a href="#crm" class="block hover:text-blue-500">CRM & Automation</a>
-          <a href="#content" class="block hover:text-blue-500">Content Creation</a>
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">Anabasis Enterprises</a>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <div class="relative group">
+          <button class="text-gray-800 hover:text-blue-600 font-medium">Services</button>
+          <div class="absolute top-full mt-2 bg-white border rounded shadow-lg p-3 hidden group-hover:block">
+            <a href="#google" class="block px-4 py-2 hover:bg-gray-100">Google Ads</a>
+            <a href="#meta" class="block px-4 py-2 hover:bg-gray-100">Meta Ads</a>
+            <a href="#tiktok" class="block px-4 py-2 hover:bg-gray-100">TikTok Ads</a>
+            <a href="#ai" class="block px-4 py-2 hover:bg-gray-100">AI Integration</a>
+            <a href="#organic" class="block px-4 py-2 hover:bg-gray-100">Organic & Community</a>
+            <a href="#crm" class="block px-4 py-2 hover:bg-gray-100">CRM & Owned Media</a>
+            <a href="#clips" class="block px-4 py-2 hover:bg-gray-100">Short-Form Content</a>
+          </div>
         </div>
-      </div>
-      <a href="#about" class="hover:text-blue-400">About Us</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
-      <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">Get Started</a>
+        <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">About Us</a>
+        <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+        <a href="#cta" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Get Started</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-    <div class="mb-4 inline-block px-4 py-1 text-sm font-semibold bg-blue-700 text-white rounded-full">Next-Gen AI Marketing Solutions</div>
-    <h1 class="text-5xl font-bold">Anabasis Enterprises</h1>
-    <p class="mt-6 text-gray-300 text-lg max-w-3xl mx-auto">We architect transformative AI systems and digital strategies to scale your business intelligently.</p>
+  <section class="pattern min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <div class="inline-flex items-center px-4 py-2 mb-4 rounded-full bg-blue-100 text-blue-600 text-sm border border-blue-200">
+      Next-Gen AI Marketing Solutions
+    </div>
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Anabasis Enterprises</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-6 text-gray-600">
+      Anabasis means the great ascent. We help modern businesses break through stagnation with smarter systems, digital clarity, and AI-powered growth.
+    </p>
+    <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold text-lg transition">
+      Discover Our Services
+    </a>
   </section>
 
-  <!-- Industry Tagline -->
-  <section class="text-center px-4 py-16">
-    <div class="mb-4 inline-block px-4 py-1 text-sm font-semibold bg-purple-700 text-white rounded-full">Industry-Leading Results</div>
-    <h2 class="text-3xl font-bold">Powering Growth for <span class="text-indigo-400">Modern Brands</span></h2>
-    <p class="mt-4 text-gray-400 max-w-2xl mx-auto">We’ve built a new kind of agency—where creative strategy meets AI innovation, and every campaign is designed to supercharge your growth.</p>
+  <!-- Trust Section -->
+  <section class="py-16 bg-gray-100 text-center">
+    <div class="inline-flex items-center px-4 py-2 mb-4 rounded-full bg-indigo-100 text-indigo-600 text-sm border border-indigo-200">
+      Industry-Leading Results
+    </div>
+    <h2 class="text-3xl font-bold mb-4">Powering Growth for Industry Leaders</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Tired of the same cookie-cutter marketing tactics? We've built a new kind of agency—where creative strategy meets AI innovation, and every campaign is designed to supercharge your growth.
+    </p>
   </section>
 
   <!-- Services Section -->
-  <section class="py-20 bg-black" id="services">
+  <section id="services" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-gray-900 rounded-xl glow">
-          <h3 class="text-xl font-semibold mb-2" id="ads">Google, Meta & TikTok Ads</h3>
-          <p class="text-gray-400">Run high-converting paid campaigns with optimized creative and targeting.</p>
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Google Ads</h3>
+          <p class="text-gray-600">ROI-focused campaign management across search, display, and YouTube.</p>
         </div>
-        <div class="p-6 bg-gray-900 rounded-xl glow">
-          <h3 class="text-xl font-semibold mb-2" id="ai">AI Integration & Automation</h3>
-          <p class="text-gray-400">Systemize your operations and automate repetitive tasks with intelligent workflows.</p>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Meta Ads</h3>
+          <p class="text-gray-600">High-converting creatives and funnel strategies for Facebook and Instagram.</p>
         </div>
-        <div class="p-6 bg-gray-900 rounded-xl glow">
-          <h3 class="text-xl font-semibold mb-2" id="organic">Organic Social & Community</h3>
-          <p class="text-gray-400">Grow your brand through value-driven organic content and audience engagement.</p>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">TikTok Ads</h3>
+          <p class="text-gray-600">Native short-form video ads optimized for virality and conversion.</p>
         </div>
-        <div class="p-6 bg-gray-900 rounded-xl glow">
-          <h3 class="text-xl font-semibold mb-2" id="crm">CRM & Owned Media</h3>
-          <p class="text-gray-400">Build automated email/SMS flows and manage relationships at scale.</p>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">AI Integration & Automation</h3>
+          <p class="text-gray-600">Workflow automations and intelligent systems tailored to your ops.</p>
         </div>
-        <div class="p-6 bg-gray-900 rounded-xl glow">
-          <h3 class="text-xl font-semibold mb-2" id="content">Short-Form Content</h3>
-          <p class="text-gray-400">Capture attention with TikToks, Reels, and Shorts crafted for retention and virality.</p>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Organic Social & Community</h3>
+          <p class="text-gray-600">Human-centric engagement strategies powered by insights and content.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">CRM & Owned Media</h3>
+          <p class="text-gray-600">Email, SMS, and first-party data infrastructure to drive retention.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Short Content Clips</h3>
+          <p class="text-gray-600">Platform-native TikToks, Reels, and Shorts with real hooks and pacing.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Work With Us -->
-  <section class="py-20 bg-gradient-to-r from-gray-900 to-black text-white">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">Why Work With Us?</h2>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center gap-8 max-w-6xl mx-auto px-4">
-      <div class="bg-red-900/50 p-6 rounded-xl w-full md:w-1/2">
-        <h3 class="text-xl font-semibold mb-4">Other Agencies</h3>
-        <ul class="list-disc list-inside text-gray-400">
-          <li>Slow or inconsistent communication</li>
-          <li>One-size-fits-all campaigns</li>
-          <li>Outdated or siloed approaches</li>
-          <li>Limited AI integration</li>
-        </ul>
-      </div>
-      <div class="bg-green-900/40 p-6 rounded-xl w-full md:w-1/2">
-        <h3 class="text-xl font-semibold mb-4">Anabasis</h3>
-        <ul class="list-disc list-inside text-gray-300">
-          <li>Proactive, transparent collaboration</li>
-          <li>AI-driven, data-backed strategy</li>
-          <li>Omni-channel ecosystem design</li>
-          <li>Custom systems, not templates</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="py-20 text-center bg-gray-950" id="cta">
-    <div class="mb-4 inline-block px-4 py-1 text-sm font-semibold bg-blue-600 text-white rounded-full">Take the Next Step</div>
+  <!-- Call to Action -->
+  <section id="cta" class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
     <h2 class="text-3xl font-bold mb-4">Ready to Ascend?</h2>
-    <p class="text-gray-400 max-w-xl mx-auto mb-6">Your customers are out there. Let's make sure they find you—and never forget you. Let’s build a system that scales with precision.</p>
-    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-semibold rounded transition">Book Your Free Consultation</a>
+    <p class="mb-6 max-w-2xl mx-auto">
+      Your customers are out there. Let's make sure they find you—and never forget you. Get in touch to learn how we can transform your marketing strategy and boost your bottom line.
+    </p>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+      Book Your Free Consultation
+    </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black border-t border-gray-800 py-10 px-4 text-gray-400">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h4 class="text-white text-lg font-bold mb-2">Anabasis Enterprises</h4>
-        <p>Anabasis means "The Great Ascent." We guide businesses from chaos to clarity with AI, automation, and elite digital systems.</p>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-bold mb-2">Quick Links</h4>
-        <ul class="space-y-1">
-          <li><a href="#services" class="hover:text-blue-500">Services</a></li>
-          <li><a href="#about" class="hover:text-blue-500">About</a></li>
-          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-bold mb-2" id="contact">Contact</h4>
-        <p>Email: contact@anabasisenterprises.com</p>
-        <p>Miami, FL</p>
-      </div>
+  <footer id="contact" class="py-10 bg-gray-100 text-center text-gray-600">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-xl font-bold mb-2">Anabasis Enterprises</h3>
+      <p class="mb-4 text-sm italic">The Great Ascent</p>
+      <p class="text-sm">&copy; 2025 Anabasis Enterprises. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
