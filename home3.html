@@ -71,3 +71,76 @@
   <link rel="stylesheet" href="/assets/index.css">
   <script type="module" src="/assets/index.js" defer></script>
 </head>
+
+<body>
+  <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex-shrink-0 flex items-center space-x-3">
+          <a class="group" href="/">
+            <img src="https://i.imgur.com/VQMXNaF.png" alt="Anabasis Logo"
+                 class="h-10 w-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[360deg]">
+          </a>
+          <a class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent transition-all duration-300" href="/">
+            Anabasis
+          </a>
+        </div>
+        <div class="hidden lg:flex items-center space-x-6">
+          <!-- Navigation Items -->
+          <a href="/services" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">Services</a>
+          <a href="/about" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">About</a>
+          <a href="/industries" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">Industries</a>
+          <a href="/case-studies" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">Success Stories</a>
+          <a href="/news" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">AI News</a>
+          <a href="/contact" class="text-sm font-medium text-white hover:text-blue-400 transition duration-300">Contact</a>
+        </div>
+        <a href="/book">
+          <button class="hidden lg:flex items-center px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg text-sm font-medium hover:from-blue-500 hover:to-blue-600 transition-all duration-300">
+            Get Started
+          </button>
+        </a>
+        <button class="lg:hidden text-white p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-menu w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative min-h-[100svh] overflow-hidden bg-black">
+    <div class="section-background">
+      <div class="pattern-grid absolute inset-0"></div>
+    </div>
+    <div class="relative container mx-auto px-4 py-32 sm:py-36 md:py-40 flex min-h-[100svh] items-center">
+      <div class="w-full max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 mb-6 border border-blue-500/20">
+          <svg class="lucide lucide-sparkles w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+            <path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path>
+          </svg>
+          <span class="text-sm sm:text-base">Next-Gen AI Marketing Solutions</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Transform</span>
+          <span class="text-white">Your Digital Presence with AI</span>
+        </h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-blue-100/80 mb-8 max-w-3xl mx-auto">
+          At Anabasis, we merge 20+ years of hands-on marketing expertise with cutting-edge AI to amplify your brand’s impact.
+        </p>
+        <div class="space-y-8 sm:space-y-10">
+          <a href="/book">
+            <button class="w-full sm:w-auto px-6 sm:px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg text-base sm:text-lg font-semibold text-white hover:from-blue-500 hover:to-blue-600 transition-all duration-300 flex items-center justify-center mx-auto">
+              <span>Get Your Free AI Marketing Audit</span>
+              <svg class="lucide lucide-arrow-right w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
