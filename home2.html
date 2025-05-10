@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Metanoia - AI-Driven Systems & Strategy</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -14,7 +15,7 @@
 <body class="bg-black text-white font-sans">
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-black to-gray-900">
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-black to-gray-900" data-aos="fade-up">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">Metanoia</h1>
     <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-300">
       We architect transformative AI systems and digital strategies to scale your business intelligently.
@@ -27,25 +28,25 @@
   <!-- Services Section -->
   <section id="services" class="py-20 bg-gray-950">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Services</h2>
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
 
-        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition" data-aos="zoom-in">
           <h3 class="text-xl font-semibold mb-3 text-white">AI System Design</h3>
           <p class="text-gray-400">We build intelligent automations and models tailored to your business goals.</p>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition" data-aos="zoom-in" data-aos-delay="100">
           <h3 class="text-xl font-semibold mb-3 text-white">Digital Strategy</h3>
           <p class="text-gray-400">From branding to infrastructure, we map and execute high-ROI digital plans.</p>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition" data-aos="zoom-in" data-aos-delay="200">
           <h3 class="text-xl font-semibold mb-3 text-white">Short-Form Content</h3>
           <p class="text-gray-400">We craft high-performing TikToks, Reels, and Shorts to elevate your brand visibility.</p>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-blue-600/50 transition" data-aos="zoom-in" data-aos-delay="300">
           <h3 class="text-xl font-semibold mb-3 text-white">Consulting & Growth</h3>
           <p class="text-gray-400">Strategy sessions, funnel design, and systems audits to scale smarter, not harder.</p>
         </div>
@@ -56,7 +57,7 @@
 
   <!-- About Section -->
   <section class="py-20 bg-black text-center px-4">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto" data-aos="fade-up">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Metanoia?</h2>
       <p class="text-gray-400 text-lg">
         Metanoia means a radical shift in mindset. We partner with founders and teams ready to evolve — to build leaner, smarter, automated brands fueled by data and clarity.
@@ -65,7 +66,7 @@
   </section>
 
   <!-- Contact CTA -->
-  <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-center">
+  <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-center" data-aos="zoom-in-up">
     <h2 class="text-3xl font-bold mb-4">Ready to Evolve?</h2>
     <p class="mb-6 text-lg">Let’s build your transformation roadmap.</p>
     <a href="#" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
@@ -78,5 +79,9 @@
     © 2025 Metanoia. All rights reserved.
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
