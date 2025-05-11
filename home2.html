@@ -3,206 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anabasis Enterprises – AI‑Powered Digital Growth</title>
+  <title>Anabasis Enterprises – AI‑Powered Digital Growth</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Logo + favicon (rename the supplied cube image to logo.png and place in the same folder) -->
-  <link rel="icon" href="logo.png" type="image/png">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/mnt/data/Resized_Logo_563x563.png" />
   <style>
-    html { scroll-behavior: smooth; }
-    /* faint grid */
-    .pattern {
-      background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    /* blue haze behind hero */
-    .hero-bg::before{
-      content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 20%,rgba(37,99,235,.15),transparent 70%);pointer-events:none;}
-    /* subtle glow on service cards */
-    .service-card:hover .glow{opacity:.5;}
-    .service-card .glow{transition:opacity .4s;}
-    /* floating bg sparkles */
-    @keyframes float {
-      0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}
-    }
-    .float-anim{animation:float 6s ease-in-out infinite;}
+    html{scroll-behavior:smooth}
+    /* soft grid background */
+    .pattern{background-image:linear-gradient(to right,#e5e7eb0d 1px,transparent 1px),linear-gradient(to bottom,#e5e7eb0d 1px,transparent 1px);background-size:40px 40px}
   </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
-
+<body class="font-sans text-gray-900 bg-white pattern">
 <!-- ───────── HEADER ───────── -->
-<header class="sticky top-0 bg-white z-50 shadow">
-  <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
-    <a href="#top" class="flex items-center space-x-3 group">
-      <img src="logo.png" alt="Anabasis Enterprises Logo" class="h-12 w-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[360deg] float-anim" />
-      <span class="text-3xl font-extrabold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">Anabasis Enterprises</span>
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow">
+  <div class="flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
+    <a href="#" class="flex items-center space-x-2">
+      <img src="/mnt/data/Resized_Logo_563x563.png" alt="Anabasis Logo" class="object-contain w-10 h-10" />
+      <span class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">Anabasis Enterprises</span>
     </a>
-    <nav class="hidden lg:flex items-center space-x-6 text-[15px] font-medium">
+    <nav class="items-center hidden space-x-6 text-sm font-medium lg:flex">
       <a href="#services" class="hover:text-blue-600">Services</a>
-      <a href="#comparison" class="hover:text-blue-600">Why Us</a>
+      <a href="#whyus" class="hover:text-blue-600">Why Us</a>
       <a href="#contact" class="hover:text-blue-600">Contact</a>
-      <a href="#cta" class="px-5 py-2 rounded-lg text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 transition">Get Started</a>
+      <a href="#cta" class="px-4 py-2 text-white transition bg-blue-600 rounded hover:bg-blue-700">Get Started</a>
     </nav>
   </div>
 </header>
-
 <!-- ───────── HERO ───────── -->
-<section class="relative pattern hero-bg container mx-auto px-4 py-20 sm:py-24 lg:py-28 flex items-center min-h-[75vh]" id="top">
-  <div class="w-full max-w-5xl text-center mx-auto">
-    <div class="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>
-      <span class="text-sm sm:text-base">Cutting‑Edge AI Marketing Solutions</span>
-    </div>
-    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6">
-      <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Elevate</span>
-      <span class="text-gray-900"> Your Digital Footprint with AI</span>
-    </h1>
-    <p class="text-xl sm:text-2xl md:text-3xl text-gray-700 max-w-3xl mx-auto mb-12">Anabasis Enterprises blends strategic insight with advanced artificial intelligence to fuel growth, streamline operations and amplify your market impact.</p>
-    <a href="#cta" class="inline-block">
-      <button class="px-8 py-4 rounded-lg text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 transition flex items-center justify-center mx-auto">
-        Get Your Free AI Marketing Audit
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-3"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </button>
-    </a>
+<section class="relative flex flex-col items-center px-4 pt-20 pb-32 mx-auto text-center container sm:pt-24 md:pt-28" data-aos="fade-up">
+  <div class="inline-flex items-center px-4 py-2 mb-6 text-blue-400 border rounded-full bg-blue-500/10 border-blue-500/20">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813A2 2 0 0 1 8.813 10.09L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+    <span class="text-sm sm:text-base">Cutting‑Edge AI Marketing Solutions</span>
   </div>
+  <h1 class="mb-6 font-bold leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+    <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Ascend</span>
+    <span class="text-gray-900"> your Digital</span><br class="hidden md:block"/>
+    <span class="text-gray-900">Footprint with AI</span>
+  </h1>
+  <p class="max-w-3xl mx-auto mb-8 text-lg text-blue-500 sm:text-xl md:text-2xl">Anabasis Enterprises blends strategic insight with advanced artificial intelligence to fuel growth, streamline operations and amplify your market impact.</p>
+  <a href="#services" class="w-full sm:w-auto">
+    <button class="flex items-center justify-center w-full px-6 py-4 mx-auto text-base font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg sm:w-auto sm:px-8 hover:from-blue-500 hover:to-blue-600">
+      <span>Get Your Free AI Marketing Audit</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </button>
+  </a>
 </section>
-
 <!-- ───────── SERVICES ───────── -->
-<section id="services" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-5xl font-bold text-center mb-16">Our Services</h2>
+<section id="services" class="py-24 bg-white">
+  <div class="px-4 mx-auto max-w-6xl" data-aos="fade-up">
+    <h2 class="mb-12 text-3xl font-bold text-center md:text-4xl lg:text-5xl">Our Services</h2>
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
       <!-- card template -->
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">Performance Media (PPC)</h3><p class="text-gray-600">Google, Meta & TikTok ads engineered for ROI.</p>
-      </div>
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">AI & Automation</h3><p class="text-gray-600">Custom AI tools and automated workflows that scale.</p>
-      </div>
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-emerald-500 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">Short‑Form Content</h3><p class="text-gray-600">Hooks, editing & strategy for Reels, Shorts & TikTok.</p>
-      </div>
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">CRM & Retention</h3><p class="text-gray-600">Email/SMS flows that deepen loyalty and LTV.</p>
-      </div>
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-fuchsia-500 to-pink-600 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">Consulting</h3><p class="text-gray-600">One‑on‑one guidance aligning team, systems & growth.</p>
-      </div>
-      <div class="relative service-card group p-8 bg-blue-50 rounded-xl shadow-lg overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-sky-600 opacity-0 glow rounded-xl blur-lg"></div>
-        <h3 class="text-2xl font-semibold mb-3">CRM & Owned Media</h3><p class="text-gray-600">Build content ecosystems that convert and retain.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────── COMPARISON ───────── -->
-<section id="comparison" class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-20">
-      <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 mb-6 border border-blue-500/20">Comparison</div>
-      <h2 class="text-5xl lg:text-6xl font-bold mb-4">Why <span class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent italic">Work with Us?</span></h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <!-- other (white) -->
       <div class="relative group">
-        <div class="absolute -inset-0.5 bg-gradient-to-r from-red-500/30 to-red-600/30 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition"></div>
-        <div class="relative p-8 bg-white rounded-2xl border border-red-500/30 shadow-xl">
-          <h3 class="text-2xl font-bold text-gray-900 mb-8">Other Agencies</h3>
-          <ul class="space-y-5 text-base text-gray-700">
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>Slow or inconsistent communication</span></li>
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>One‑size‑fits‑all campaigns</span></li>
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>Outdated or siloed approaches</span></li>
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>Limited AI integration</span></li>
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>Unclear ROI tracking</span></li>
-            <li class="flex items-start space-x-3"><span class="text-red-500 font-bold">✘</span><span>Reactive rather than proactive</span></li>
-          </ul>
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-blue-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-blue-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">Performance Media (PPC)</h3>
+          <p class="text-gray-600">Google, Meta & TikTok ads engineered for ROI.</p>
         </div>
       </div>
-      <!-- anabasis (white) -->
       <div class="relative group">
-        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500/30 to-blue-600/30 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition"></div>
-        <div class="relative p-8 bg-white rounded-2xl border border-blue-500/30 shadow-xl">
-          <h3 class="text-2xl font-bold text-gray-900 mb-8">Anabasis Enterprises</h3>
-          <ul class="space-y-5 text-base text-gray-700">
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>Constant, proactive communication</span></li>
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>Omni‑channel, integrated solutions</span></li>
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>AI‑driven workflows for smarter decisions</span></li>
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>Data‑backed strategy with real‑time insights</span></li>
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>Proven track record of boosting ROI</span></li>
-            <li class="flex items-start space-x-3"><span class="text-blue-600 font-bold">✔</span><span>20+ years of marketing expertise</span></li>
-          </ul>
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-indigo-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-indigo-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">AI & Automation</h3>
+          <p class="text-gray-600">Streamline ops with custom AI tools & workflows.</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-green-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-green-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">Short‑Form Content</h3>
+          <p class="text-gray-600">Hooks, editing & strategy for Reels, Shorts & TikTok.</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-orange-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-orange-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">CRM & Retention</h3>
+          <p class="text-gray-600">Email, SMS & loyalty flows that boost LTV.</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-teal-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-teal-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">CRM & Owned Media</h3>
+          <p class="text-gray-600">Build and monetize platforms you fully control.</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute inset-0 transition duration-300 rounded-2xl blur-lg opacity-0 bg-purple-500/40 group-hover:opacity-100"></div>
+        <div class="relative p-8 bg-purple-50 rounded-2xl shadow-lg">
+          <h3 class="mb-2 text-xl font-semibold">Consulting</h3>
+          <p class="text-gray-600">Strategy sessions & audits aligned to growth goals.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<!-- ───────── WHY WORK WITH US ───────── -->
+<section id="whyus" class="relative py-24">
+  <div class="absolute inset-0 pointer-events-none bg-blue-500/5"></div>
+  <div class="relative px-4 mx-auto container">
+    <div class="mb-20 text-center">
+      <div class="inline-flex items-center px-4 py-2 mb-6 text-blue-400 border rounded-full bg-blue-500/10 border-blue-500/20">Comparison</div>
+      <h2 class="text-4xl font-bold md:text-5xl lg:text-6xl">Why <span class="italic bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">work with us?</span></h2>
+    </div>
+    <div class="grid gap-8 mb-16 md:grid-cols-2">
+      <!-- Other Agencies -->
+      <div class="relative p-8 overflow-hidden bg-white border rounded-2xl">
+        <h3 class="mb-8 text-2xl font-bold">Other Agencies</h3>
+        <ul class="space-y-6 text-gray-700">
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>Slow or inconsistent communication</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>One‑size‑fits‑all campaigns</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>Outdated or siloed approaches</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>Limited AI integration</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>Unclear ROI tracking</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span>Reactive rather than proactive</span></li>
+        </ul>
+      </div>
+      <!-- Anabasis -->
+      <div class="relative p-8 overflow-hidden bg-white border rounded-2xl">
+        <h3 class="mb-8 text-2xl font-bold">Anabasis Enterprises</h3>
+        <ul class="space-y-6 text-gray-700">
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Constant, proactive communication</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Omni‑channel, integrated solutions</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>AI‑driven workflows for smarter decisions</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Data‑backed strategy with real‑time insights</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Proven track record of boosting ROI</span></li>
+          <li class="flex items-start space-x-4"><svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>20+ years of marketing expertise</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ───────── CTA ───────── -->
-<section id="cta" class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
-  <h2 class="text-4xl sm:text-5xl font-bold mb-4">Ready to Ignite Your Growth?</h2>
-  <p class="mb-10 max-w-2xl mx-auto text-white/90">Your customers are out there. Let’s make sure they find you—and never forget you. Book a free consultation to transform your marketing strategy.</p>
-  <a href="#contact" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">Book My Free Consultation</a>
-</section>
-
-<!-- ───────── FOOTER ───────── -->
-<footer id="contact" class="bg-gray-900 text-blue-100 px-6 py-16">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-    <!-- Brand -->
-    <div class="space-y-6">
-      <div class="flex items-center space-x-3">
-        <img src="logo.png" alt="Logo" class="h-10 w-10" />
-        <span class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Anabasis Enterprises</span>
-      </div>
-      <p class="leading-relaxed">Empowering businesses with AI‑powered marketing solutions. Your success is our mission.</p>
-      <div class="flex space-x-4">
-        <a href="#" class="w-10 h-10 rounded-lg flex items-center justify-center bg-blue-500/10 border border-blue-500/20 hover:border-blue-500/50 hover:text-blue-300 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 4c-.8.4-1.6.6-2.5.8.9-.5 1.6-1.4 2-2.4-.9.5-1.8.9-2.8 1.1C17.1 2.5 16 2 14.8 2c-2.4 0-4.3 2-4.3 4.3 0 .3 0 .6.1.9-3.6-.2-6.7-1.9-8.8-4.4-.4.6-.6 1.4-.6 2.2 0 1.5.8 2.8 2 3.6-.7 0-1.4-.2-2-.6v.1c0 2.1 1.5 3.8 3.5 4.2-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.3-1.6 1.2-3.5 1.9-5.7 1.9H2c2 1.3 4.4 2 7 2 8.4 0 13-7 13-13l-.1-.6C20.8 5.6 21.5 4.9 22 4z"/></svg></a>
-      </div>
-    </div>
-
-    <!-- Quick Links -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
-      <ul class="space-y-3">
-        <li><a href="#top" class="hover:text-blue-400">Home</a></li>
-        <li><a href="#services" class="hover:text-blue-400">Services</a></li>
-        <li><a href="#comparison" class="hover:text-blue-400">Why Us</a></li>
-        <li><a href="#cta" class="hover:text-blue-400">AI Audit</a></li>
-        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
-        <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-6">Contact Us</h3>
-      <ul class="space-y-4 text-blue-100/80">
-        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-blue-400"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@anabasis.ai" class="hover:text-blue-400">info@anabasis.ai</a></li>
-        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-blue-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.04.9.23 1.78.56 2.62a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.33 1.72.52 2.62.56A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+15614811047" class="hover:text-blue-400">+1 (561) 481‑1047</a></li>
-        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/0/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-blue-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/?q=Miami" target="_blank" class="hover:text-blue-400">Miami, FL</a></li>
-      </ul>
-    </div>
-
-    <!-- Newsletter -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-6">Stay Updated</h3>
-      <p class="mb-4">Subscribe to our newsletter for the latest insights.</p>
-      <form class="space-y-3">
-        <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded-lg bg-blue-500/10 border border-blue-500/20 placeholder-blue-400 focus:outline-none focus:border-blue-500" />
-        <button type="submit" class="w-full px-4 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">Subscribe</button>
-      </form>
-    </div>
-  </div>
-  <p class="text-center text-sm mt-12 text-blue-100/60">© 2025 Anabasis Enterprises. All rights reserved.</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
-</body>
-</html>
+<section id="cta" class="py-24 text-center bg-blue-50/40">
+  <div class="container px-4 mx-auto" data-aos="fade-up">
+    <div class="inline-flex items-center px-4 py-2 mb-6 text-blue-400 border rounded-full bg-blue-500/10 border-blue-500/20">Ascend</div>
+    <h2 class="mb-6 text-4xl font-bold sm:text-5xl md:text-6xl">Ready to Ignite Your Growth?</h2>
+    <p class="max-w-3xl mx-auto mb-10 text-lg text-gray-700 sm:text-xl">Your customers are out there. Let’s make sure they find you—and never forget you. Get in touch to learn how we can transform your marketing strategy and boost your bottom line.</p>
+    <a href="#contact" class="inline-block">
+      <button class="flex items-center justify-center px-6 py-4 text-base font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg sm:px-8 sm:text-lg hover:from-blue-500 hover:to-blue-600">
+        <span>Book My Free Consultation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7
