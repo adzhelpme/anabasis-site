@@ -20,11 +20,9 @@
 <body class="bg-white text-gray-900 font-sans">
 
   <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="/" class="flex items-center space-x-2">
-        <img src="https://i.imgur.com/VQMXNaF.png" alt="Anabasis Logo" class="w-10 h-10" />
-        <span class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text">Anabasis Enterprises</span>
+  <header class="sticky top-0 bg-white shadow z-50 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">Anabasis Enterprises</a>
       <nav class="hidden md:flex space-x-6 items-center text-sm">
         <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Services</a>
         <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">About Us</a>
@@ -34,22 +32,16 @@
     </div>
   </header>
 
-
-
-  
-
-
-
   <!-- Hero Section -->
-  <section class="pattern pt-12 pb-16 flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
-    <div class="inline-flex items-center px-4 py-1 mb-4 rounded-full bg-blue-100 text-blue-600 text-sm border border-blue-200">
+  <section class="pattern flex flex-col justify-center items-center text-center px-4 py-32" data-aos="fade-up">
+    <div class="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-blue-100 text-blue-600 text-sm border border-blue-200">
       Cutting-Edge AI Marketing Solutions
     </div>
-    <h1 class="text-4xl md:text-5xl font-bold mb-3">Revolutionize Your Business with AI</h1>
-    <p class="text-base md:text-lg max-w-2xl mb-6 text-gray-600">
+    <h1 class="text-6xl md:text-7xl font-bold mb-6">Revolutionize Your Business with AI</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-10 text-gray-600">
       At Anabasis Enterprises, we merge strategy with cutting-edge AI to amplify growth, streamline systems, and elevate your brand.
     </p>
-    <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold text-base transition">
+    <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition">
       Get Your Free AI Marketing Audit
     </a>
   </section>
@@ -57,74 +49,72 @@
   <!-- Services Section -->
   <section id="services" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Performance Media (PPC)</h3>
-          <p class="text-gray-600">Google, Meta, and TikTok ads with creative funnels and ROI-focused execution.</p>
+      <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">Performance Media (PPC)</h3>
+          <p class="text-gray-600">Google, Meta, and TikTok ad campaigns focused on ROI and conversion.</p>
         </div>
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">AI & Automation</h3>
-          <p class="text-gray-600">AI-driven process automation and smart systems to optimize your operations.</p>
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">AI & Automation</h3>
+          <p class="text-gray-600">Streamline operations using custom AI tools and automated workflows.</p>
         </div>
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Short-Form Content</h3>
-          <p class="text-gray-600">Reels, Shorts, and TikTok content optimized with real strategy and conversion focus.</p>
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">Short-Form Content</h3>
+          <p class="text-gray-600">Hooks, editing, and strategy for Shorts, Reels, TikTok & beyond.</p>
         </div>
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">CRM & Retention</h3>
-          <p class="text-gray-600">Email, SMS, loyalty, and automation flows to retain users and drive lifetime value.</p>
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">CRM & Retention</h3>
+          <p class="text-gray-600">Email, SMS, and loyalty flows that drive engagement and repeat business.</p>
         </div>
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">CRM & Owned Media</h3>
-          <p class="text-gray-600">Build a customer list and drive action with platforms you fully control.</p>
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">Consulting</h3>
+          <p class="text-gray-600">One-on-one guidance to align your team, systems, and strategy for growth.</p>
         </div>
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Consulting</h3>
-          <p class="text-gray-600">Strategy sessions and audits to align marketing, sales, and systems with growth goals.</p>
+        <div class="bg-blue-50 p-8 rounded-xl shadow">
+          <h3 class="text-2xl font-semibold mb-3">CRM & Owned Media</h3>
+          <p class="text-gray-600">Boost LTV with powerful content ecosystems and optimized customer journeys.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Comparison Section -->
-  <section class="py-20 bg-gray-100">
+  <section id="comparison" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">But why choose <span class="text-blue-600">Anabasis Enterprises</span>?</h2>
+      <h2 class="text-4xl font-bold text-center mb-12">But, why choose Anabasis Enterprises?</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <!-- Other Agencies -->
-        <div class="bg-white p-6 rounded-xl border border-red-200">
-          <h3 class="text-2xl font-bold text-red-700 mb-6">Other Agencies</h3>
+        <div class="bg-white border border-gray-300 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-6">Other Agencies</h3>
           <ul class="space-y-4 text-red-600">
-            <li>❌ Slow or inconsistent communication</li>
-            <li>❌ One-size-fits-all campaigns</li>
-            <li>❌ Outdated or siloed approaches</li>
-            <li>❌ Limited AI integration</li>
-            <li>❌ Unclear ROI tracking</li>
-            <li>❌ Reactive rather than proactive</li>
+            <li>✘ Slow or inconsistent communication</li>
+            <li>✘ One-size-fits-all campaigns</li>
+            <li>✘ Outdated or siloed approaches</li>
+            <li>✘ Limited AI integration</li>
+            <li>✘ Unclear ROI tracking</li>
+            <li>✘ Reactive rather than proactive</li>
           </ul>
         </div>
-        <!-- Anabasis Enterprises -->
-        <div class="bg-white p-6 rounded-xl border border-blue-200">
-          <h3 class="text-2xl font-bold text-blue-700 mb-6">Anabasis Enterprises</h3>
-          <ul class="space-y-4 text-blue-600">
-            <li>✅ Constant, proactive communication</li>
-            <li>✅ Omni-channel, integrated solutions</li>
-            <li>✅ AI-driven workflows for smarter decisions</li>
-            <li>✅ Data-backed strategy with real-time insights</li>
-            <li>✅ Proven track record of boosting ROI</li>
-            <li>✅ Strategic alignment with growth-focused execution</li>
+        <div class="bg-white border border-gray-300 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-6">Anabasis Enterprises</h3>
+          <ul class="space-y-4 text-green-600">
+            <li>✔ Constant, proactive communication</li>
+            <li>✔ Omni-channel, integrated solutions</li>
+            <li>✔ AI-driven workflows for smarter decisions</li>
+            <li>✔ Data-backed strategy with real-time insights</li>
+            <li>✔ Proven track record of boosting ROI</li>
+            <li>✔ Modern, collaborative strategy execution</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section id="cta" class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
+  <!-- CTA Section -->
+  <section id="cta" class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
     <h2 class="text-3xl font-bold mb-4">Ready to Ignite Your Growth?</h2>
     <p class="mb-6 max-w-2xl mx-auto">
-      Your customers are out there. Let's make sure they find you—and never forget you.
+      Your customers are out there. Let’s make sure they find you—and never forget you. Get in touch to learn how we can transform your marketing strategy and boost your bottom line.
     </p>
     <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
       Book Your Free Consultation
@@ -132,12 +122,34 @@
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="py-10 bg-gray-100 text-center text-gray-600">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-xl font-bold mb-2">Anabasis Enterprises</h3>
-      <p class="mb-4 text-sm italic">The Great Ascent</p>
-      <p class="text-sm">&copy; 2025 Anabasis Enterprises. All rights reserved.</p>
+  <footer class="bg-gray-100 text-gray-700 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <h3 class="text-2xl font-bold text-blue-600 mb-4">Anabasis Enterprises</h3>
+        <p class="text-sm leading-relaxed">Empowering business growth through AI-powered systems and strategic clarity.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <p class="text-sm">Miami, FL<br>Email: hello@anabasisenterprises.com<br>Phone: (555) 123-4567</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Newsletter</h4>
+        <form class="space-y-3">
+          <input type="email" placeholder="Your email" class="w-full px-4 py-2 border rounded" />
+          <button class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Subscribe</button>
+        </form>
+      </div>
     </div>
+    <p class="text-center text-xs mt-10">&copy; 2025 Anabasis Enterprises. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
