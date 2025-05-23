@@ -1,31 +1,1174 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVP Doors - Sliding Door Repair Miami | Fixed Today</title>
-    <meta name="description" content="Same-day sliding glass door repair in Miami-Dade. Free estimate, no call-out fee. 4.9★ rated family-owned specialists." />
-    <meta name="author" content="MVP Doors Specialists" />
-
-    <meta property="og:title" content="MVP Doors - Sliding Door Repair Miami | Fixed Today" />
-    <meta property="og:description" content="Same-day sliding glass door repair in Miami-Dade. Free estimate, no call-out fee. 4.9★ rated family-owned specialists." />
-    <meta property="og:type" content="website" />
-
+    <meta name="description" content="Same-day sliding glass door repair in Miami-Dade. Free estimate, no call-out fee. 4.9★ rated family-owned specialists.">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-orange: #F37021;
+            --orange-light: #FFA63A;
+            --orange-dark: #E05800;
+            --charcoal: #231F20;
+            --cool-gray: #666666;
+            --mist-gray: #F5F5F5;
+            --gray-light: #F5F5F5;
+            --white: #FFFFFF;
+            --elev-1: 0 4px 8px rgba(0,0,0,0.15);
+            --elev-2: 0 6px 12px rgba(0,0,0,0.20);
+        }
 
-    <meta name="twitter:card" content="summary_large_image" />
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- ✅ Fixed relative paths below -->
-    <link rel="stylesheet" crossorigin href="assets/index-7EteUMHx.css" />
-    <script type="module" crossorigin src="assets/index-GJ1k2dGm.js"></script>
-  </head>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background: var(--white);
+        }
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-  </body>
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 1.2;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.0rem;
+            }
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 2.0rem;
+            line-height: 1.25;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            margin-bottom: 16px;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        @media (min-width: 768px) {
+            .text-lg {
+                font-size: 1.25rem;
+            }
+        }
+
+        .text-cool-gray {
+            color: var(--cool-gray);
+        }
+
+        /* Buttons */
+        .brand-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, var(--orange-light) 0%, var(--brand-orange) 100%);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .brand-button:hover {
+            background: linear-gradient(90deg, var(--brand-orange) 0%, var(--orange-dark) 100%);
+            box-shadow: var(--elev-2);
+            transform: translateY(-2px);
+        }
+
+        .brand-button.large {
+            font-size: 1.125rem;
+            padding: 20px 32px;
+        }
+
+        .brand-button.full-width {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&h=1080&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content {
+                max-width: 58.333333%;
+            }
+        }
+
+        .trust-badges {
+            display: none;
+            align-items: center;
+            gap: 24px;
+            font-size: 0.875rem;
+            color: var(--cool-gray);
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: 640px) {
+            .trust-badges {
+                display: flex;
+            }
+        }
+
+        .stars {
+            color: #FBBF24;
+        }
+
+        .hero-cta {
+            margin-bottom: 16px;
+        }
+
+        .secondary-cta {
+            font-size: 0.875rem;
+            color: var(--charcoal);
+        }
+
+        .secondary-cta a {
+            color: var(--brand-orange);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .secondary-cta a:hover {
+            color: var(--orange-dark);
+        }
+
+        /* Sections */
+        .section {
+            padding: 64px 0;
+        }
+
+        @media (max-width: 767px) {
+            .section {
+                padding: 40px 0;
+            }
+        }
+
+        .section.bg-mist {
+            background-color: var(--mist-gray);
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: 32px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--elev-2);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: var(--brand-orange);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* Images */
+        .section-image {
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+        }
+
+        @media (min-width: 768px) {
+            .section-image {
+                height: 320px;
+            }
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #E5E7EB;
+            box-shadow: var(--elev-1);
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .author-info h4 {
+            font-weight: 500;
+            color: var(--charcoal);
+            margin: 0;
+        }
+
+        .author-info p {
+            font-size: 0.875rem;
+            color: var(--cool-gray);
+            margin: 0;
+        }
+
+        .aggregate-rating {
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .rating-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            font-size: 1.125rem;
+            flex-wrap: wrap;
+        }
+
+        .rating-content .stars {
+            color: #FBBF24;
+        }
+
+        .rating-content .score {
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        .rating-content .reviews {
+            color: var(--cool-gray);
+        }
+
+        .rating-content .badge {
+            color: var(--brand-orange);
+            font-weight: 500;
+        }
+
+        /* Differentiation */
+        .diff-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .diff-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .diff-bullet {
+            width: 12px;
+            height: 12px;
+            background: var(--brand-orange);
+            border-radius: 50%;
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+
+        .team-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .team-name {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin: 0;
+        }
+
+        .team-title {
+            font-size: 0.75rem;
+            color: var(--brand-orange);
+            font-style: italic;
+            margin: 4px 0 0 0;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--white);
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question:hover {
+            background-color: #F9FAFB;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--brand-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-answer.open {
+            padding: 0 24px 24px;
+            max-height: 200px;
+        }
+
+        .faq-answer p {
+            color: var(--cool-gray);
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            margin: 0;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 3fr 2fr;
+            }
+        }
+
+        .contact-cta {
+            text-align: center;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-cta {
+                text-align: left;
+            }
+        }
+
+        .trust-footer {
+            background: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+            margin-top: 32px;
+        }
+
+        .trust-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.875rem;
+            color: var(--charcoal);
+        }
+
+        @media (min-width: 1024px) {
+            .trust-items {
+                justify-content: flex-start;
+            }
+        }
+
+        .trust-items span {
+            font-weight: 500;
+        }
+
+        /* Form */
+        .form-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: var(--elev-1);
+            margin-top: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            .form-card {
+                margin-top: 0;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #D1D5DB;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--brand-orange);
+            box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-disclaimer {
+            font-size: 0.75rem;
+            color: var(--cool-gray);
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-light);
+            padding: 32px 0;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            color: var(--cool-gray);
+            letter-spacing: 0.4px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .footer-links a {
+            font-size: 0.75rem;
+            color: var(--cool-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--brand-orange);
+        }
+
+        .footer-divider {
+            font-size: 0.75rem;
+            color: var(--cool-gray);
+        }
+
+        /* Sticky Call Bar */
+        .sticky-call-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            display: flex;
+        }
+
+        @media (min-width: 768px) {
+            .sticky-call-bar {
+                display: none;
+            }
+        }
+
+        .sticky-call-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: var(--brand-orange);
+            color: var(--white);
+            padding: 12px 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            width: 100%;
+            box-shadow: var(--elev-2);
+        }
+
+        .phone-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-0 { margin-bottom: 0; }
+        .mb-1 { margin-bottom: 8px; }
+        .mb-2 { margin-bottom: 16px; }
+        .mb-3 { margin-bottom: 24px; }
+        .mb-4 { margin-bottom: 32px; }
+        .mb-6 { margin-bottom: 48px; }
+
+        .mt-0 { margin-top: 0; }
+        .mt-1 { margin-top: 8px; }
+        .mt-2 { margin-top: 16px; }
+        .mt-3 { margin-top: 24px; }
+        .mt-4 { margin-top: 32px; }
+        .mt-6 { margin-top: 48px; }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sliding Door Stuck? We'll Fix It Today.</h1>
+                
+                <p class="text-lg text-cool-gray mb-4">
+                    Same-day sliding glass door repair anywhere in Miami-Dade. Free estimate, no call-out fee.
+                </p>
+
+                <div class="trust-badges">
+                    <div class="flex align-center">
+                        <span class="stars">★★★★★</span>
+                        <span class="ml-1">4.9 Google</span>
+                    </div>
+                    <span>•</span>
+                    <span>BBB A+</span>
+                    <span>•</span>
+                    <span>Licensed & Insured</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="tel:13055553667" class="brand-button large">
+                        <svg class="phone-icon" style="margin-right: 8px;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-2C7.492 18 2 12.508 2 5.5v-2z" clip-rule="evenodd" />
+                        </svg>
+                        Call Now • Free Estimate<br>305-555-DOOR
+                    </a>
+                </div>
+
+                <p class="secondary-cta">
+                    Prefer online? 
+                    <a href="#contact-form">Request service in 60 sec.</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2>When Your Patio Door Becomes a Daily Battle …</h2>
+                    
+                    <p class="text-cool-gray">
+                        Every tug screeches, the track grinds, and the door still won't budge. Now you're worried about cracked glass, rising AC bills, and a lock that won't keep anyone out. Ignoring it only makes repairs pricier—and tonight's rain or tomorrow's guest is coming either way. You need that door gliding smoothly today.
+                    </p>
+                </div>
+                
+                <div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&h=400&q=80" 
+                        alt="Corroded sliding door rollers close-up"
+                        class="section-image"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section bg-mist">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="card">
+                    <span class="card-icon">⏰</span>
+                    <h3>Fixed Today, Not "Someday."</h3>
+                    <p class="text-cool-gray">90% of doors restored in one visit—no return trips.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="card-icon">🛠</span>
+                    <h3>Specialists, Not Handymen.</h3>
+                    <p class="text-cool-gray">Father-and-sons team that repairs > 1,000 Miami sliders every year.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="card-icon">💵</span>
+                    <h3>Transparent Pricing.</h3>
+                    <p class="text-cool-gray">Free on-site quote; you approve before we lift a tool.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="card-icon">🛡</span>
+                    <h3>1-Year "No-Stick" Warranty.</h3>
+                    <p class="text-cool-gray">If it jams again, we return free.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="card-icon">🌴</span>
+                    <h3>Local & Family-Owned.</h3>
+                    <p class="text-cool-gray">The owners themselves show up—no subcontractors, no shortcuts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3 mb-6">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "Called at 10 AM, door was sliding like new by 1 PM. Cheaper than replacing and the guys were a pleasure."
+                    </p>
+                    <div class="testimonial-author">
+                        <img 
+                            src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?auto=format&fit=crop&w=48&h=48&q=80"
+                            alt="Linda T. headshot"
+                            class="testimonial-avatar"
+                        />
+                        <div class="author-info">
+                            <h4>— Linda T.</h4>
+                            <p>Miami Beach</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "Saved me $2,400 a contractor wanted for a new door. MVP swapped rollers in 30 minutes."
+                    </p>
+                    <div class="testimonial-author">
+                        <img 
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=48&h=48&q=80"
+                            alt="Carlos M. headshot"
+                            class="testimonial-avatar"
+                        />
+                        <div class="author-info">
+                            <h4>— Carlos M.</h4>
+                            <p>Coral Gables</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "Professional, fast, and honest. My door hasn't stuck once since they fixed it 8 months ago."
+                    </p>
+                    <div class="testimonial-author">
+                        <img 
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=48&h=48&q=80"
+                            alt="Sarah K. headshot"
+                            class="testimonial-avatar"
+                        />
+                        <div class="author-info">
+                            <h4>— Sarah K.</h4>
+                            <p>Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aggregate-rating">
+                <div class="rating-content">
+                    <span class="stars">★★★★★</span>
+                    <span class="score">4.9 / 5</span>
+                    <span class="reviews">(187 Google reviews)</span>
+                    <span class="reviews">|</span>
+                    <span class="badge">HomeAdvisor "Top Pro"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiation Section -->
+    <section class="section bg-mist">
+        <div class="container">
+            <div class="text-center mb-6">
+                <h2>Why Homeowners Choose the MVP Family, Not a Random Tech.</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <div>
+                    <ul class="diff-list">
+                        <li class="diff-item">
+                            <div class="diff-bullet"></div>
+                            <div>
+                                <h3>Owners on Every Job</h3>
+                                <p class="text-cool-gray">The father or one of his sons is always on-site, guaranteeing workmanship.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="diff-item">
+                            <div class="diff-bullet"></div>
+                            <div>
+                                <h3>Parts-Loaded Vans</h3>
+                                <p class="text-cool-gray">We stock premium stainless rollers and tracks, so fixes happen in one visit.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="diff-item">
+                            <div class="diff-bullet"></div>
+                            <div>
+                                <h3>No-Mess Promise</h3>
+                                <p class="text-cool-gray">Shoe covers on entry, full sweep and wipe-down before we leave.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="diff-item">
+                            <div class="diff-bullet"></div>
+                            <div>
+                                <h3>Community Reputation</h3>
+                                <p class="text-cool-gray">10 years serving Miami-Dade; 40% of new calls come from neighbor referrals.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="team-card">
+                        <h3 class="text-center">Meet the MVP Family</h3>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80"
+                                    alt="Frank Sr. portrait"
+                                    class="team-avatar"
+                                />
+                                <p class="team-name">Frank Sr.</p>
+                                <p class="team-title">Owner</p>
+                            </div>
+                            <div class="team-member">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80"
+                                    alt="Frank Jr. portrait"
+                                    class="team-avatar"
+                                />
+                                <p class="team-name">Frank Jr.</p>
+                                <p class="team-title">Co-Owner</p>
+                            </div>
+                            <div class="team-member">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80"
+                                    alt="Michael portrait"
+                                    class="team-avatar"
+                                />
+                                <p class="team-name">Michael</p>
+                                <p class="team-title">Co-Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center mb-6">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How much will my repair cost?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every door is different, but most fixes run $150–$350. The on-site quote is free, and you never pay a diagnostic fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Can you come today?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes—call before 2 PM and we'll slot you same-day. Evening and Saturday visits available for emergencies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do you replace whole doors?
+                    </button>
+                    <div class="faq-answer">
+                        <p>90% of doors can be restored for a fraction of replacement cost. If yours is beyond repair, we'll tell you and credit the quote toward a new install.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Are you licensed & insured?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely—State of Florida license #SLD-2048; $2M liability coverage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What if the door sticks again?
+                    </button>
+                    <div class="faq-answer">
+                        <p>You're covered by our 12-month "No-Stick" warranty. One call and we return free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-form" class="section bg-mist">
+        <div class="container">
+            <div class="text-center mb-6">
+                <h2>Ready to Glide? Let's Fix Your Door Today.</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-cta">
+                    <a href="tel:13055553667" class="brand-button large mb-2">
+                        <svg class="phone-icon" style="margin-right: 12px;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-2C7.492 18 2 12.508 2 5.5v-2z" clip-rule="evenodd" />
+                        </svg>
+                        CALL 305-555-DOOR NOW
+                    </a>
+                    
+                    <p style="font-size: 0.875rem; color: var(--cool-gray); margin-bottom: 32px;">
+                        Same-day slots fill fast—secure yours in 60 seconds.
+                    </p>
+
+                    <div class="trust-footer">
+                        <div class="trust-items">
+                            <span>100% Satisfaction</span>
+                            <span>•</span>
+                            <span>1-Year Warranty</span>
+                            <span>•</span>
+                            <span>Family-Owned & Operated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h3 class="text-center">Prefer Text?</h3>
+                    
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your Name *"
+                                required
+                                class="form-input"
+                            />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Your Phone *"
+                                required
+                                class="form-input"
+                            />
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea
+                                name="issue"
+                                placeholder="Brief issue (optional)"
+                                maxlength="100"
+                                class="form-input form-textarea"
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="brand-button full-width">
+                            Get My Free Estimate
+                        </button>
+                        
+                        <p class="form-disclaimer">
+                            No spam, ever.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    MVP Doors Specialists LLC • Serving Miami-Dade & Broward • © 2025
+                </p>
+                <div class="footer-links">
+                    <a href="#" target="_blank">Privacy</a>
+                    <span class="footer-divider">|</span>
+                    <a href="#" target="_blank">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Call Bar -->
+    <div class="sticky-call-bar">
+        <a href="tel:13055553667" class="sticky-call-link">
+            <svg class="phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-2C7.492 18 2 12.508 2 5.5v-2z" clip-rule="evenodd" />
+            </svg>
+            <span>Call for Free Estimate</span>
+        </a>
+    </div>
+
+    <script>
+        // FAQ toggle functionality
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(faq => {
+                faq.classList.remove('open');
+            });
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+            });
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                answer.classList.add('open');
+                button.classList.add('active');
+            }
+        }
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your backend
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            alert('Thank you! We\'ll contact you shortly for your free estimate.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading state to form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                submitButton.textContent = 'Get My Free Estimate';
+                submitButton.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
 </html>
