@@ -20,7 +20,7 @@
           <h2 class="text-[#181311] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Call Us Now</h2>
           <div class="flex w-12 items-center justify-end">
             <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#181311] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-[#181311] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
             >
               <div class="text-[#181311]" data-icon="Phone" data-size="24px" data-weight="regular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -35,7 +35,7 @@
         <div class="@container">
           <div class="@[480px]:p-4">
             <div
-              class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+              class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
               style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPBr35GdF8L5yFHNxwSXibP24Y_4CnxRGLOaHN_7ugrPE0XFEqmxOs5HTT3_MWnZ3BSkyZ-gl3XxBRaD5Rm-bE2uqEJU5GlspoxeQIy6LaplQO7oIN1bvWQDXF7cXm7zHnwQSd3vmmzrYfnk4n-izFqAESVtMHHvL3p1Y10rHsLc51xvYuqCX6UIWZb2azmAxCJPmFqtVBGit8yTNJL_1_5oLK5qPsL8l6dwvruMETTAZyAjFsOjVFEZl9ofr-O4R-6B8Z2R_KB34");'
             >
               <div class="flex flex-col gap-2 text-center">
@@ -49,7 +49,7 @@
                 </h2>
               </div>
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f2590c] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e76012] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
               >
                 <span class="truncate">Call Us Now</span>
               </button>
@@ -102,23 +102,23 @@
           <div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
             <p class="text-[#181311] text-sm font-normal leading-normal">5</p>
             <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e6dfdb]"><div class="rounded-full bg-[#181311]" style="width: 86%;"></div></div>
-            <p class="text-[#8a6e60] text-sm font-normal leading-normal text-right">86%</p>
+            <p class="text-[#897061] text-sm font-normal leading-normal text-right">86%</p>
             <p class="text-[#181311] text-sm font-normal leading-normal">4</p>
             <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e6dfdb]"><div class="rounded-full bg-[#181311]" style="width: 10%;"></div></div>
-            <p class="text-[#8a6e60] text-sm font-normal leading-normal text-right">10%</p>
+            <p class="text-[#897061] text-sm font-normal leading-normal text-right">10%</p>
             <p class="text-[#181311] text-sm font-normal leading-normal">3</p>
             <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e6dfdb]"><div class="rounded-full bg-[#181311]" style="width: 2%;"></div></div>
-            <p class="text-[#8a6e60] text-sm font-normal leading-normal text-right">2%</p>
+            <p class="text-[#897061] text-sm font-normal leading-normal text-right">2%</p>
             <p class="text-[#181311] text-sm font-normal leading-normal">2</p>
             <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e6dfdb]"><div class="rounded-full bg-[#181311]" style="width: 1%;"></div></div>
-            <p class="text-[#8a6e60] text-sm font-normal leading-normal text-right">1%</p>
+            <p class="text-[#897061] text-sm font-normal leading-normal text-right">1%</p>
             <p class="text-[#181311] text-sm font-normal leading-normal">1</p>
             <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e6dfdb]"><div class="rounded-full bg-[#181311]" style="width: 1%;"></div></div>
-            <p class="text-[#8a6e60] text-sm font-normal leading-normal text-right">1%</p>
+            <p class="text-[#897061] text-sm font-normal leading-normal text-right">1%</p>
           </div>
         </div>
         <div class="flex items-center gap-4 bg-white px-4 min-h-14">
-          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f5f1f0] shrink-0 size-10" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
               <path
                 d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"
@@ -128,7 +128,7 @@
           <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Licensed &amp; Insured</p>
         </div>
         <div class="flex items-center gap-4 bg-white px-4 min-h-14">
-          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f5f1f0] shrink-0 size-10" data-icon="Users" data-size="24px" data-weight="regular">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="Users" data-size="24px" data-weight="regular">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
               <path
                 d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
@@ -136,6 +136,56 @@
             </svg>
           </div>
           <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Family-Owned</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="CurrencyDollar" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Free Estimates</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="Translate" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M239.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,100,126.93,103.65,103.65,0,0,0,127.69,64H152a8,8,0,0,0,0-16H96V32a8,8,0,0,0-16,0V48H24a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,88,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,76,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L140.94,192h70.11l13.79,27.58A8,8,0,0,0,232,224a8,8,0,0,0,7.15-11.58ZM148.94,176,176,121.89,203.05,176Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Hablamos Español</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="Star" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">100+ 5-Star Reviews</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="Clock" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Quick Response &amp; Efficient Service</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+          <div class="text-[#181311] flex items-center justify-center rounded-lg bg-[#f4f2f0] shrink-0 size-10" data-icon="Receipt" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M72,104a8,8,0,0,1,8-8h96a8,8,0,0,1,0,16H80A8,8,0,0,1,72,104Zm8,40h96a8,8,0,0,0,0-16H80a8,8,0,0,0,0,16ZM232,56V208a8,8,0,0,1-11.58,7.15L192,200.94l-28.42,14.21a8,8,0,0,1-7.16,0L128,200.94,99.58,215.15a8,8,0,0,1-7.16,0L64,200.94,35.58,215.15A8,8,0,0,1,24,208V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V195.06l20.42-10.22a8,8,0,0,1,7.16,0L96,199.06l28.42-14.22a8,8,0,0,1,7.16,0L160,199.06l28.42-14.22a8,8,0,0,1,7.16,0L216,195.06Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#181311] text-base font-normal leading-normal flex-1 truncate">Warranty on Work Done</p>
         </div>
         <h2 class="text-[#181311] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Services</h2>
         <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
@@ -180,26 +230,26 @@
             <h2 class="text-[#181311] text-base font-bold leading-tight">Handle Repair</h2>
           </div>
         </div>
-        <h2 class="text-[#181311] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Testimonials</h2>
+        <h2 class="text-[#181311] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Google 5-Star Reviews</h2>
         <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
           <div class="flex items-stretch p-4 gap-3">
             <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
               <div
-                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9g9DmxEMyWhwq1ECAK82iMQMhmG0QATBPRLWXjvkqOf3SuwogGkRUefJYYMgiJtzPJWqWC4wVwHuYvgfokszcd21q5LoV1EnZyuSKNX0YjynoXiadmyQkjM57swl186ALC_NoGbYMVQsTQqIjaopbnEzdgSFZNYDkv24HI2ehkDK56mL3RiG0EFTDZ__ULqoA2oLXvcq-DGqK6I_3OYMyB_EDKDCep2JLlZ_0S1NBJRjqZMsh1TgoeVXY8fUjS31v5MnTI30ltl0");'
               ></div>
               <p class="text-[#181311] text-base font-medium leading-normal">"The team was professional and fixed my door quickly. Highly recommend!"</p>
             </div>
             <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
               <div
-                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_sF_iztB2Ui0_XyHcMaVpWLoxflu-M8Bfb2syfRQ_Hx7PbxiB1N0dXg3zgIAgs-8UqNBbMSQrPozbdYmjpOrZP52GUegKytytmALCkVdCLC5CaVmL1UOg5rvQVHLygfNFkLRCh8I6138vA7vBoNsObHt7QZDb7hXeQ6GYJtJXSOzEgiK2LFUznDVVdmEflQN0M66aecTXWSil2KZ8-1QB6J9nISKDbuQ-M3rGEKRx06zaGltnN4N0Nuau2E7yVCGwjyK6216xl8E");'
               ></div>
               <p class="text-[#181311] text-base font-medium leading-normal">"Excellent service! They arrived on time and did a fantastic job."</p>
             </div>
             <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
               <div
-                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhOwM8WTHMYjctwQ34R9Btoa9iJjPTlNoWf5SeNTVgrFpysQeBETO7Uty50dZNcdpZpoYCEyjIXiJyfY4-f-tQt_i8a0lc4BNj6Lb4kvT2QRUbsMnSmn_Wu4FgLTcBpGXlmHoYTtA0f91kxhZIPujkoCdm5qgS6UT9klTZ5n29mnioT4O4U0MhyOkx4qDuICjSmTF3NBgGGKnv90WupRFKfo51iscHpu-ENhiGbiPBmXZIxXEJWZjJyQWwvvyEOeKsDEnnTy0PRRc");'
               ></div>
               <p class="text-[#181311] text-base font-medium leading-normal">"I'm so glad I called them. My sliding door works like new again."</p>
@@ -209,13 +259,13 @@
         <h2 class="text-[#181311] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Serving Miami &amp; Nearby Areas</h2>
         <div class="flex px-4 py-3">
           <div
-            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover"
             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEtdfFb49yIdZOW4DBJHgq27ZCRz9RY_WPs168M3JgLxeaBLBXQgEHvZv8h0yukcD4yP7xa0PJ5jW80tD6uUmsvpkTKA3nyijwfZdvCtKJ_FNuMrv0WQd5idzP40kyTam2iS_SK44tH2vxq8bfzVy4qwnKvUF5FG8V8N6ln8ZvZqqJM1QY0vwxayflBpYUKRP4CZ9v04xbH5VeilEDNIbtnnmi39Bnh_3lZN5faoKddWmuaEVGmeBxbWlcGgCm9nJDnt3yVNV8Wmw");'
           ></div>
         </div>
       </div>
       <div>
-        <div class="flex gap-2 border-t border-[#f5f1f0] bg-white px-4 pb-3 pt-2">
+        <div class="flex gap-2 border-t border-[#f4f2f0] bg-white px-4 pb-3 pt-2">
           <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#181311]" href="#">
             <div class="text-[#181311] flex h-8 items-center justify-center" data-icon="Phone" data-size="24px" data-weight="fill">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -231,3 +281,4 @@
     </div>
   </body>
 </html>
+
