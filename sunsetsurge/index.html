@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sunset Surge Digital is a Miami-based home service business marketing agency delivering Miami SEO, local SEO and digital marketing that drives leads and revenue."
+    />
+    <meta
+      name="keywords"
+      content="miami seo, local seo miami, digital marketing miami, home service business marketing agency"
+    />
+    <title>Sunset Surge Digital – Miami SEO & Performance Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      :root {
+        --pink: #ff6bff;
+        --cyan: #39ffff;
+        --violet: #c784ff;
+        --dark: #080814;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, var(--pink), var(--cyan));
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      /* progress bar */
+      #progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--pink), var(--cyan));
+        width: 0;
+        z-index: 1000;
+      }
+      /* section reveal */
+      [data-aos] {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-[#080814] text-white">
+    <div id="progress"></div>
+    <!-- HEADER -->
+    <header class="sticky top-0 bg-black/70 backdrop-blur z-50" id="top">
+      <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <a href="#top" class="text-2xl font-bold">
+          <span class="text-white">Sunset </span
+          ><span class="gradient-text">Surge</span> Digital
+        </a>
+        <button
+          id="nav-toggle"
+          class="lg:hidden text-pink-300 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <ul id="nav-links" class="hidden lg:flex space-x-6 text-sm">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#why" class="nav-link">Why Us</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a
+              href="#contact"
+              class="ml-4 px-4 py-2 rounded bg-pink-500 text-white hover:bg-pink-400"
+              >Free Strategy Call</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul
+        id="mobile-nav"
+        class="lg:hidden hidden flex-col bg-black/90 px-4 pb-4 space-y-2 text-sm"
+      >
+        <li><a href="#hero" class="nav-link block py-1">Home</a></li>
+        <li><a href="#services" class="nav-link block py-1">Services</a></li>
+        <li><a href="#why" class="nav-link block py-1">Why Us</a></li>
+        <li><a href="#work" class="nav-link block py-1">Work</a></li>
+        <li><a href="#pricing" class="nav-link block py-1">Pricing</a></li>
+        <li><a href="#faq" class="nav-link block py-1">FAQ</a></li>
+        <li><a href="#contact" class="nav-link block py-1">Contact</a></li>
+        <li>
+          <a
+            href="#contact"
+            class="block text-center px-4 py-2 rounded bg-pink-500 text-white"
+            >Free Strategy Call</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="relative overflow-hidden min-h-screen flex items-center"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-pink-600/30 via-cyan-600/20 to-black"
+      ></div>
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
+        alt="Miami skyline"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+      <div class="relative max-w-3xl mx-auto px-4 text-center">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6"
+          data-aos="fade-up"
+        >
+          Miami SEO & Digital Marketing that makes growth look easy.
+        </h1>
+        <p
+          class="text-lg sm:text-xl mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          We blend technical and local SEO, Google Ads, and scroll-stopping
+          content into a system that drives leads and revenue for Miami home
+          service businesses — not vanity metrics.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a
+            href="#contact"
+            class="px-6 py-3 rounded bg-pink-500 hover:bg-pink-400"
+            >Free Strategy Call</a
+          >
+          <a
+            href="#work"
+            class="px-6 py-3 rounded border border-pink-400 text-pink-300 hover:bg-pink-400 hover:text-white"
+            >See Case Studies</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="py-8 bg-black" data-aos="fade-up">
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center text-center gap-6 text-sm"
+      >
+        <div class="flex items-center gap-2">
+          <span class="text-cyan-300">◆</span>Google Ads Certified
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-cyan-300">◆</span>Meta Ads Experience
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-cyan-300">◆</span>Local SEO & GBP Mastery
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-cyan-300">◆</span>90%+ Client Retention
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section
+      id="services"
+      class="py-20 bg-gradient-to-b from-black to-gray-800"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+          Services
+        </h2>
+        <div
+          class="grid gap-8 md:grid-cols-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="p-6 rounded-lg bg-gray-800/50 backdrop-blur border border-pink-400/40 hover:border-pink-400 transition"
+          >
+            <h3 class="text-2xl font-semibold mb-4">SEO & Local</h3>
+            <p class="text-sm leading-relaxed text-gray-300">
+              Technical fixes, Google Business Profile optimization, location
+              page strategy.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-lg bg-gray-800/50 backdrop-blur border border-cyan-400/40 hover:border-cyan-400 transition"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Google & Meta Ads</h3>
+            <p class="text-sm leading-relaxed text-gray-300">
+              Conversion-driven campaigns, retargeting and landing page testing.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-lg bg-gray-800/50 backdrop-blur border border-violet-400/40 hover:border-violet-400 transition"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Short-Form Content</h3>
+            <p class="text-sm leading-relaxed text-gray-300">
+              UGC-style videos, hooks & CTAs, analytics iteration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+          Why Us
+        </h2>
+        <div
+          class="grid gap-8 md:grid-cols-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="bg-gray-800/60 p-6 rounded-lg border border-pink-400/40">
+            <h3 class="text-xl font-semibold mb-3">Strategy &gt; Services</h3>
+            <p class="text-sm text-gray-300">
+              We built and scaled our own home service business with these exact
+              strategies — now we implement them for clients.
+            </p>
+          </div>
+          <div class="bg-gray-800/60 p-6 rounded-lg border border-cyan-400/40">
+            <h3 class="text-xl font-semibold mb-3">Creative that Converts</h3>
+            <p class="text-sm text-gray-300">
+              Short-form content and ads that drive sales.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800/60 p-6 rounded-lg border border-violet-400/40"
+          >
+            <h3 class="text-xl font-semibold mb-3">Clarity & Reporting</h3>
+            <p class="text-sm text-gray-300">
+              One dashboard. Weekly actions. No black-box noise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section
+      id="comparison"
+      class="py-20 bg-gradient-to-b from-gray-900 to-black"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+          Sunset Surge vs Typical Agency
+        </h2>
+        <div class="overflow-x-auto" data-aos="fade-up" data-aos-delay="100">
+          <table
+            class="min-w-full text-left text-sm border-separate border-spacing-y-2"
+          >
+            <thead>
+              <tr class="text-gray-400">
+                <th class="p-3"></th>
+                <th class="p-3">Sunset Surge</th>
+                <th class="p-3">Typical Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-gray-800/60">
+                <td class="p-3 font-medium">Strategy & execution</td>
+                <td class="p-3 text-green-400">✔ Integrated</td>
+                <td class="p-3 text-red-400">✘ Siloed</td>
+              </tr>
+              <tr class="bg-gray-800/60">
+                <td class="p-3 font-medium">SEO approach</td>
+                <td class="p-3 text-green-400">✔ Technical + local</td>
+                <td class="p-3 text-red-400">✘ Generic checklists</td>
+              </tr>
+              <tr class="bg-gray-800/60">
+                <td class="p-3 font-medium">Creative</td>
+                <td class="p-3 text-green-400">✔ Short-form storytellers</td>
+                <td class="p-3 text-red-400">✘ Stock content</td>
+              </tr>
+              <tr class="bg-gray-800/60">
+                <td class="p-3 font-medium">Reporting</td>
+                <td class="p-3 text-green-400">✔ Weekly, transparent</td>
+                <td class="p-3 text-red-400">✘ Monthly guesswork</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF / CASE STUDIES -->
+    <section id="work" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-around text-center mb-16"
+          data-aos="fade-up"
+        >
+          <div class="mb-6 md:mb-0">
+            <span class="text-3xl font-bold text-pink-300">350%</span>
+            <p class="text-sm text-gray-300">Avg. ROAS lift</p>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <span class="text-3xl font-bold text-cyan-300">+127%</span>
+            <p class="text-sm text-gray-300">CTR increase</p>
+          </div>
+          <div>
+            <span class="text-3xl font-bold text-violet-300">90%+</span>
+            <p class="text-sm text-gray-300">Client Retention</p>
+          </div>
+        </div>
+        <div
+          class="grid gap-8 md:grid-cols-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="p-6 bg-gray-800/60 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Local Service Brand</h3>
+            <p class="text-sm text-gray-300">
+              Doubled leads in 3 months with GBP and hyper-local pages.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-800/60 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">DTC E-commerce</h3>
+            <p class="text-sm text-gray-300">
+              350% ROAS from optimized Google Shopping & UGC ads.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-800/60 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Multi-location Clinic</h3>
+            <p class="text-sm text-gray-300">
+              Built content engine increasing organic traffic 4x.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-20 bg-gradient-to-b from-black to-gray-800">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Pricing</h2>
+        <div
+          class="flex items-center justify-center mb-10"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <span class="mr-3 text-sm">Monthly</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="billing-toggle" class="sr-only" />
+            <span
+              class="w-10 h-5 bg-gray-700 rounded-full flex items-center px-1 transition"
+            >
+              <span
+                class="dot w-4 h-4 bg-pink-400 rounded-full transition-transform"
+              ></span
+            ></span>
+          </label>
+          <span class="ml-3 text-sm"
+            >Annual <span class="text-pink-300">(save 15%)</span></span
+          >
+        </div>
+        <div
+          class="grid gap-8 md:grid-cols-3"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="p-6 bg-gray-800/60 rounded-lg flex flex-col">
+            <h3 class="text-xl font-semibold mb-4">Local Starter</h3>
+            <p class="text-4xl font-bold mb-4">
+              <span class="price" data-monthly="1250" data-annual="1063"
+                >$1,250</span
+              ><span class="text-sm">/mo</span>
+            </p>
+            <ul class="text-sm text-left flex-1 mb-6 space-y-2">
+              <li>GBP optimization</li>
+              <li>On-page fixes + 2 pages</li>
+              <li>Review & citation push</li>
+            </ul>
+            <a
+              href="#contact"
+              class="mt-auto px-4 py-2 rounded bg-pink-500 hover:bg-pink-400"
+              >Start</a
+            >
+          </div>
+          <div class="p-6 bg-gray-800/60 rounded-lg flex flex-col">
+            <h3 class="text-xl font-semibold mb-4">Growth</h3>
+            <p class="text-4xl font-bold mb-4">
+              <span class="price" data-monthly="2500" data-annual="2125"
+                >$2,500</span
+              ><span class="text-sm">/mo</span>
+            </p>
+            <ul class="text-sm text-left flex-1 mb-6 space-y-2">
+              <li>Starter + Ads</li>
+              <li>4 pages/posts</li>
+              <li>8 short-form clips</li>
+            </ul>
+            <a
+              href="#contact"
+              class="mt-auto px-4 py-2 rounded bg-pink-500 hover:bg-pink-400"
+              >Start</a
+            >
+          </div>
+          <div class="p-6 bg-gray-800/60 rounded-lg flex flex-col">
+            <h3 class="text-xl font-semibold mb-4">Custom</h3>
+            <p class="text-4xl font-bold mb-4">
+              <span class="price" data-monthly="4000" data-annual="3400"
+                >$4,000</span
+              ><span class="text-sm">/mo+</span>
+            </p>
+            <ul class="text-sm text-left flex-1 mb-6 space-y-2">
+              <li>Dedicated strategist</li>
+              <li>Full creative & CRO</li>
+              <li>Weekly dashboards</li>
+            </ul>
+            <a
+              href="#contact"
+              class="mt-auto px-4 py-2 rounded bg-pink-500 hover:bg-pink-400"
+              >Start</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+          FAQ
+        </h2>
+        <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="border border-gray-700 rounded">
+            <button
+              class="w-full text-left p-4 flex justify-between items-center faq-btn"
+            >
+              <span>How long to see results?</span><span>+</span>
+            </button>
+            <div class="px-4 pb-4 hidden">
+              Most clients notice significant lift within 3–6 months depending
+              on starting point and market.
+            </div>
+          </div>
+          <div class="border border-gray-700 rounded">
+            <button
+              class="w-full text-left p-4 flex justify-between items-center faq-btn"
+            >
+              <span>Do you do month-to-month?</span><span>+</span>
+            </button>
+            <div class="px-4 pb-4 hidden">
+              Yes, with a 30‑day notice after initial 3‑month collaboration.
+            </div>
+          </div>
+          <div class="border border-gray-700 rounded">
+            <button
+              class="w-full text-left p-4 flex justify-between items-center faq-btn"
+            >
+              <span>What industries do you work with?</span><span>+</span>
+            </button>
+            <div class="px-4 pb-4 hidden">
+              Home services, e‑commerce, healthcare, and more.
+            </div>
+          </div>
+          <div class="border border-gray-700 rounded">
+            <button
+              class="w-full text-left p-4 flex justify-between items-center faq-btn"
+            >
+              <span>What’s onboarding like?</span><span>+</span>
+            </button>
+            <div class="px-4 pb-4 hidden">
+              Kickoff call, data access setup, strategy roadmap in first week.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-black to-gray-800">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">
+          Let’s build your growth engine.
+        </h2>
+        <p class="mb-10 text-gray-300" data-aos="fade-up" data-aos-delay="100">
+          Tell us where you are and where you want to go. We’ll map the fastest
+          path.
+        </p>
+        <form class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              class="bg-gray-800 p-3 rounded border border-gray-700 focus:outline-none focus:border-pink-400"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="bg-gray-800 p-3 rounded border border-gray-700 focus:outline-none focus:border-pink-400"
+            />
+          </div>
+          <input
+            type="text"
+            name="website"
+            placeholder="Website"
+            class="w-full bg-gray-800 p-3 rounded border border-gray-700 focus:outline-none focus:border-pink-400"
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Message"
+            class="w-full bg-gray-800 p-3 rounded border border-gray-700 focus:outline-none focus:border-pink-400"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="px-6 py-3 rounded bg-pink-500 hover:bg-pink-400"
+          >
+            Send
+          </button>
+        </form>
+        <ul
+          class="mt-8 space-y-2 text-sm text-gray-400"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <li>• Response within 24h</li>
+          <li>• Clear scope</li>
+          <li>• No long contracts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-10">
+      <div class="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-4">
+        <div>
+          <h3 class="text-xl font-bold mb-2">
+            <span class="text-white">Sunset </span
+            ><span class="gradient-text">Surge</span>
+          </h3>
+          <p class="text-sm">Miami-born SEO & performance marketing.</p>
+        </div>
+        <div class="text-sm">
+          <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+          <ul class="space-y-1">
+            <li>
+              <a href="#services" class="hover:text-pink-300">Services</a>
+            </li>
+            <li><a href="#why" class="hover:text-pink-300">Why Us</a></li>
+            <li><a href="#work" class="hover:text-pink-300">Work</a></li>
+            <li><a href="#pricing" class="hover:text-pink-300">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-pink-300">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="text-sm">
+          <h4 class="font-semibold mb-2 text-white">Contact</h4>
+          <p>hello@sunsetsurge.com</p>
+          <p>Miami, FL</p>
+        </div>
+        <div class="text-sm">
+          <h4 class="font-semibold mb-2 text-white">Find Us</h4>
+          <iframe
+            title="Sunset Surge Digital on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358360.3988121198!2d-80.3646769!3d25.7823406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69d3f31e361%3A0x18fa302ff7f6ba26!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1693276099860!5m2!1sen!2sus"
+            width="100%"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-500 mt-8">
+        © 2025 Sunset Surge Digital
+      </p>
+    </footer>
+
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 p-3 rounded-full bg-pink-500 hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+      // mobile nav toggle
+      const toggle = document.getElementById("nav-toggle");
+      const nav = document.getElementById("mobile-nav");
+      toggle.addEventListener("click", () => nav.classList.toggle("hidden"));
+      // progress bar
+      const progress = document.getElementById("progress");
+      window.addEventListener("scroll", () => {
+        const h = document.documentElement;
+        const s = h.scrollTop / (h.scrollHeight - h.clientHeight);
+        progress.style.width = s * 100 + "%";
+        backToTop.classList.toggle("hidden", h.scrollTop < 400);
+      });
+      // scrollspy
+      const links = document.querySelectorAll(".nav-link");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              links.forEach((l) => l.classList.remove("text-pink-300"));
+              const id = entry.target.getAttribute("id");
+              document
+                .querySelectorAll('a[href="#' + id + '"')
+                .forEach((a) => a.classList.add("text-pink-300"));
+            }
+          });
+        },
+        { threshold: 0.6 },
+      );
+      document
+        .querySelectorAll("section[id]")
+        .forEach((sec) => observer.observe(sec));
+      // pricing toggle
+      const toggleBilling = document.getElementById("billing-toggle");
+      toggleBilling.addEventListener("change", () => {
+        document.querySelectorAll(".price").forEach((el) => {
+          const val = toggleBilling.checked
+            ? el.dataset.annual
+            : el.dataset.monthly;
+          el.textContent = "$" + val;
+        });
+      });
+      // faq
+      const faqBtns = document.querySelectorAll(".faq-btn");
+      faqBtns.forEach((btn) =>
+        btn.addEventListener("click", () => {
+          const ans = btn.nextElementSibling;
+          const open = ans.classList.contains("hidden");
+          document
+            .querySelectorAll("#faq div > div")
+            .forEach((d) => d.classList.add("hidden"));
+          document
+            .querySelectorAll("#faq .faq-btn")
+            .forEach(
+              (b) => (b.querySelector("span:last-child").textContent = "+"),
+            );
+          if (open) {
+            ans.classList.remove("hidden");
+            btn.querySelector("span:last-child").textContent = "-";
+          }
+        }),
+      );
+      // back to top
+      const backToTop = document.getElementById("backToTop");
+      backToTop.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+    </script>
+  </body>
+</html>
